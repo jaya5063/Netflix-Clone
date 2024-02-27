@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: #000000;
+}
+
+.main {
+    background-image: url(images/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+}
+
+.main .box {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    opacity: .65;
+    background-color: black;
+}
+
+nav img {
+    position: relative;
+    z-index: 10;
+}
+
+nav {
+    max-width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+}
+
+.btn {
+    border: .5px solid #5F6060;
+    background: #0F1213;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    z-index: 10;
+    padding: 6px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    width: 110px;
+}
+
+.btn-red {
+    width: 80px;
+    border: none;
+    background-color: #C11119;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.btn-red-gs {
+    width: 230px;
+    padding: 13px;
+    background: #C11119;
+    font-size: 24px;
+    font-weight: 400;
+    border: none;
+    justify-content: space-around;
+}
+
+.home_content {
+    width: 100%;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    height: calc(100% - 100px);
+    gap: 20px;
+    text-align: center;
+}
+
+.home_content> :nth-child(1) {
+    font-family: "Open Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.home_content> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.home_content> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.home_content input {
+    width: 230px;
+    font-size: 16px;
+    background-color: transparent;
+    padding: 17px;
+    border: .5px solid #5F6060;
+    border-radius: 7px;
+}
+
+.line {
+    height: 10px;
+    width: 100%;
+    background-color: #232323;
+    position: relative;
+    z-index: 20;
+}
+
+.first,
+.second,
+.third {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80vh;
+}
+
+.tv_content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 30px;
+    /* padding: 70px; */
+    flex-wrap: wrap;
+}
+
+.tv_content :nth-child(1) {
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 50px;
+}
+
+.tv_content :nth-child(2) {
+    font-weight: 400;
+    font-size: 22px;
+    padding: 10px 0px 0px;
+}
+
+.tv_content :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.image {
+    position: relative;
+}
+
+.first img {
+    position: relative;
+    width: 460px;
+    padding: 36px 20px;
+}
+
+.image video {
+    position: absolute;
+    width: 330px;
+    top: 110px;
+    right: 85px;
+}
+
+.second img {
+    position: relative;
+    width: 480px;
+
+}
+
+.third img {
+    position: relative;
+    width: 520px;
+    top: 50px;
+    left: 20px;
+}
+
+.third video {
+    position: absolute;
+    top: 95px;
+    right: 76px;
+    width: 325px;
+}
+
+.fourth {
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 130vh;
+}
+
+.fourth h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 900;
+    padding: 72px 0px 0px;
+}
+
+.faq {
+    color: #ffff;
+    font-size: 20px;
+    letter-spacing: .5px;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    margin: 6px auto;
+    padding: 25px 25px;
+    cursor: pointer;
+}
+
+.faq:hover {
+    background-color: #414141;
+    transition: all 1s ease-out;
+}
+
+.fourth input {
+    width: 250px;
+    font-size: 16px;
+    background-color: #0F0F0F;
+    padding: 15px;
+    border: .5px solid #5F6060;
+    border-radius: 7px;
+}
+
+.faq_add {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ready {
+    padding: 29px 35px 10px 41px;
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    color: #B3B3B3;
+    max-width: 70vw;
+    margin: auto;
+}
+
+footer .span {
+    position: relative;
+    font-size: 16px;
+    top: 60px;
+    left: 6px;
+}
+
+.foot {
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr .5fr;
+    height: 50vh;
+}
+
+.footer_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_items a {
+    color: #B3B3B3;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+footer .btn {
+    position: relative;
+    bottom: 70px;
+}
+
+@media screen and (max-width:400px) {
+    .fourth{
+        height: 500vh;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+
+    .main {
+        height: 60vh;
+    }
+
+    nav {
+        max-width: 100%;
+    }
+
+    .home_content> :nth-child(1) {
+        font-family: "Open Sans", sans-serif;
+        font-size: 38px;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .first,
+    .second,
+    .third {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 70vh;
+        text-align: center;
+    }
+
+    .tv_content {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        line-height: 30px;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .tv_content :nth-child(1) {
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .tv_content :nth-child(2) {
+        font-weight: 400;
+        font-size: 20px;
+        padding: 10px 0px 0px;
+    }
+
+    .tv_content :nth-child(3) {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .fourth {
+        color: white;
+        display: flex;
+        height: 180vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 130vh;
+        text-align: center;
+    }
+
+    .faq_add {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .first img {
+        width: 350px;
+        bottom: 40px;
+    }
+
+    .first video {
+        width: 300px;
+        right: 30px;
+        top: 20px;
+    }
+
+    .third img {
+        width: 350px;
+        bottom: 90px;
+    }
+    .third video {
+        width: 230px;
+        right: 42px;
+        top: 75px;
+    }
+
+    .second{
+        display: flex;
+        justify-content: center;
+
+    }
+    .second img{
+        width: 300px;
+    }
+    .foot{
+        grid-template-columns: .5fr .5fr;
+        padding: 50px 0px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    
+    .main{
+        height: 80vh;
+    }
+    .first,
+    .second,
+    .third {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .tv_content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        line-height: 30px;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media screen and (max-width:2000px) {
+
+    .main{
+        height: 650px;
+    }
+    
+    .first,
+    .second,
+    .third {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .tv_content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        line-height: 30px;
+        flex-wrap: wrap;
+    }
+    .first img {
+        width: 350px;
+        bottom: 40px;
+    }
+
+    .first video {
+        width: 300px;
+        right: 30px;
+        top: 20px;
+    }
+
+    .third img {
+        width: 350px;
+        bottom: 90px;
+    }
+    .third video {
+        width: 230px;
+        right: 42px;
+        top: 75px;
+    }
+
+    .second{
+        display: flex;
+        justify-content: center;
+
+    }
+    .second img{
+        width: 300px;
+    }
+    .fourth{
+        /* height: 121vh; */
+    }
+
+    .fourth h2 {
+        padding: 7px 0px 0px;
+    }
+}
